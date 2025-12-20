@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_insta_clone/Screens/Bottomnav/bottomnav.dart';
 import 'package:flutter_insta_clone/Screens/SignUp/signUpscreen.dart';
 import 'package:flutter_insta_clone/Widgets/uihelper.dart';
 
@@ -43,7 +44,15 @@ class LoginScreen extends StatelessWidget {
             ),
 
             SizedBox(height: 20),
-            Uihelper.CustomButton(callback: () {}, Buttonname: "Log In"),
+            Uihelper.CustomButton(
+              callback: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BottomNavScreen()),
+                );
+              },
+              Buttonname: "Log In",
+            ),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -75,7 +84,7 @@ class LoginScreen extends StatelessWidget {
                   callback: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) =>SignUpScreen()),
+                      MaterialPageRoute(builder: (context) => SignUpScreen()),
                     );
                   },
                 ),
