@@ -15,79 +15,79 @@ class _SearchScreenState extends State<SearchScreen> {
     {
       "img":
           "https://media.istockphoto.com/id/2147497907/photo/young-woman-traveler-relaxing-and-enjoying-the-tropical-sea-while-traveling-for-summer.jpg?s=612x612&w=0&k=20&c=iY2aqFsXX9Hzq_KwAZhy3ug74z0y7KHxUc_msPHyKzU=",
-    },  
-    {
-      "img":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QaSoBWAm1u7GYxby8RKYtU1ilY74oSKlOg&s"
     },
     {
       "img":
-          "https://publish.purewow.net/wp-content/uploads/sites/2/2024/02/most-beautiful-places-in-the-world_Seljalandsfoss-Iceland.jpg?fit=680%2C400"
-    },   
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QaSoBWAm1u7GYxby8RKYtU1ilY74oSKlOg&s",
+    },
     {
       "img":
-          "https://images.stockcake.com/public/6/2/0/6204ef0a-4e8e-417d-955d-cd7d9af09806_large/sunset-ocean-view-stockcake.jpg"
-    },    
+          "https://publish.purewow.net/wp-content/uploads/sites/2/2024/02/most-beautiful-places-in-the-world_Seljalandsfoss-Iceland.jpg?fit=680%2C400",
+    },
+    {
+      "img":
+          "https://images.stockcake.com/public/6/2/0/6204ef0a-4e8e-417d-955d-cd7d9af09806_large/sunset-ocean-view-stockcake.jpg",
+    },
 
-     {
-      "img":"https://t4.ftcdn.net/jpg/02/44/16/37/360_F_244163733_ErNyvrHfOJcRlHd7t3doQcs4bEgclAfq.jpg"
-    },
     {
       "img":
           "https://st2.depositphotos.com/1370441/8142/i/450/depositphotos_81426254-stock-photo-happy-couple-driving-in-convertible.jpg",
     },
-      {
-      "img":"https://kfoods.com/images1/newrecipeicon/zinger-burger_4521.jpg"
+    {"img": "https://kfoods.com/images1/newrecipeicon/zinger-burger_4521.jpg"},
+    {
+      "img":
+          "https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg",
     },
-      {
-      "img":"https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg"
+    {
+      "img":
+          "https://cdn-hmacl.nitrocdn.com/INHBZBokNhBlPcoVcvkOpVuQOyIAOGNO/assets/images/optimized/rev-8be30cb/motorwaytoday.pk/wp-content/uploads/2023/05/Scenic-Routes-of-Pakistan-Exploring-Highways-and-Motorways.jpg",
     },
-      {
-      "img":"https://cdn-hmacl.nitrocdn.com/INHBZBokNhBlPcoVcvkOpVuQOyIAOGNO/assets/images/optimized/rev-8be30cb/motorwaytoday.pk/wp-content/uploads/2023/05/Scenic-Routes-of-Pakistan-Exploring-Highways-and-Motorways.jpg"
+    {
+      "img":
+          "https://rvshare.com/blog/wp-content/uploads/2018/05/Screen-Shot-2023-01-05-at-9.25.26-PM.png",
     },
-      {
-      "img":"https://rvshare.com/blog/wp-content/uploads/2018/05/Screen-Shot-2023-01-05-at-9.25.26-PM.png"
-    },
-      {
-      "img":"https://i.ytimg.com/vi/ILJkRQwhDec/maxresdefault.jpg"
-    },
+    {"img": "https://i.ytimg.com/vi/ILJkRQwhDec/maxresdefault.jpg"},
     {
       "img":
           "https://st2.depositphotos.com/1370441/8142/i/450/depositphotos_81426254-stock-photo-happy-couple-driving-in-convertible.jpg",
     },
-   {
-      "img":
-          "https://publish.purewow.net/wp-content/uploads/sites/2/2024/02/most-beautiful-places-in-the-world_Seljalandsfoss-Iceland.jpg?fit=680%2C400"
-    },   
     {
       "img":
-          "https://images.stockcake.com/public/6/2/0/6204ef0a-4e8e-417d-955d-cd7d9af09806_large/sunset-ocean-view-stockcake.jpg"
-    }, 
-      {
-      "img":"https://cdn-hmacl.nitrocdn.com/INHBZBokNhBlPcoVcvkOpVuQOyIAOGNO/assets/images/optimized/rev-8be30cb/motorwaytoday.pk/wp-content/uploads/2023/05/Scenic-Routes-of-Pakistan-Exploring-Highways-and-Motorways.jpg"
+          "https://publish.purewow.net/wp-content/uploads/sites/2/2024/02/most-beautiful-places-in-the-world_Seljalandsfoss-Iceland.jpg?fit=680%2C400",
+    },
+    {
+      "img":
+          "https://images.stockcake.com/public/6/2/0/6204ef0a-4e8e-417d-955d-cd7d9af09806_large/sunset-ocean-view-stockcake.jpg",
+    },
+    {
+      "img":
+          "https://t4.ftcdn.net/jpg/02/44/16/37/360_F_244163733_ErNyvrHfOJcRlHd7t3doQcs4bEgclAfq.jpg",
+    },
+    {
+      "img":
+          "https://cdn-hmacl.nitrocdn.com/INHBZBokNhBlPcoVcvkOpVuQOyIAOGNO/assets/images/optimized/rev-8be30cb/motorwaytoday.pk/wp-content/uploads/2023/05/Scenic-Routes-of-Pakistan-Exploring-Highways-and-Motorways.jpg",
     },
     {
       "img":
           "https://media.istockphoto.com/id/2147497907/photo/young-woman-traveler-relaxing-and-enjoying-the-tropical-sea-while-traveling-for-summer.jpg?s=612x612&w=0&k=20&c=iY2aqFsXX9Hzq_KwAZhy3ug74z0y7KHxUc_msPHyKzU=",
-    },  
-    {
-      "img":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QaSoBWAm1u7GYxby8RKYtU1ilY74oSKlOg&s"
     },
     {
       "img":
-          "https://publish.purewow.net/wp-content/uploads/sites/2/2024/02/most-beautiful-places-in-the-world_Seljalandsfoss-Iceland.jpg?fit=680%2C400"
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QaSoBWAm1u7GYxby8RKYtU1ilY74oSKlOg&s",
     },
-     {
-      "img":"https://cdn-hmacl.nitrocdn.com/INHBZBokNhBlPcoVcvkOpVuQOyIAOGNO/assets/images/optimized/rev-8be30cb/motorwaytoday.pk/wp-content/uploads/2023/05/Scenic-Routes-of-Pakistan-Exploring-Highways-and-Motorways.jpg"
+    {
+      "img":
+          "https://publish.purewow.net/wp-content/uploads/sites/2/2024/02/most-beautiful-places-in-the-world_Seljalandsfoss-Iceland.jpg?fit=680%2C400",
     },
-      {
-      "img":"https://rvshare.com/blog/wp-content/uploads/2018/05/Screen-Shot-2023-01-05-at-9.25.26-PM.png"
+    {
+      "img":
+          "https://cdn-hmacl.nitrocdn.com/INHBZBokNhBlPcoVcvkOpVuQOyIAOGNO/assets/images/optimized/rev-8be30cb/motorwaytoday.pk/wp-content/uploads/2023/05/Scenic-Routes-of-Pakistan-Exploring-Highways-and-Motorways.jpg",
     },
-      {
-      "img":"https://i.ytimg.com/vi/ILJkRQwhDec/maxresdefault.jpg"
+    {
+      "img":
+          "https://rvshare.com/blog/wp-content/uploads/2018/05/Screen-Shot-2023-01-05-at-9.25.26-PM.png",
     },
-      
+    {"img": "https://i.ytimg.com/vi/ILJkRQwhDec/maxresdefault.jpg"},
   ];
 
   @override
