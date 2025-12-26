@@ -121,7 +121,7 @@ class HomeScreen extends StatelessWidget {
             width: 375,
             color: Colors.black12,
             child: ListTile(
-              leading: Uihelper.CustomImage(imgurl: "Oval (1).png"),
+              leading: Uihelper.CustomImage(imgurl: "person.png"),
             ),
           )
         ],
