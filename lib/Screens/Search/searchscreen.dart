@@ -88,8 +88,23 @@ class _SearchScreenState extends State<SearchScreen> {
           "https://rvshare.com/blog/wp-content/uploads/2018/05/Screen-Shot-2023-01-05-at-9.25.26-PM.png",
     },
     {"img": "https://i.ytimg.com/vi/ILJkRQwhDec/maxresdefault.jpg"},
-    {"img": "https://www.vie-aesthetics.com/wp-content/uploads/2021/09/shutterstock_1121116859-1024x732.jpg"}
+    {"img": "https://www.vie-aesthetics.com/wp-content/uploads/2021/09/shutterstock_1121116859-1024x732.jpg"},
+    {"img": "https://picsum.photos/id/57/367/267"},
+    {"img": "https://picsum.photos/id/74/367/267"},
+    {"img": "https://picsum.photos/id/103/367/267"},
+    {"img": "https://picsum.photos/id/119/367/267"},
+    {"img": "https://picsum.photos/id/111/367/267"},
+    {"img": "https://picsum.photos/id/110/367/267"},
+    {"img": "https://picsum.photos/id/128/367/267"},
+    {"img":"https://picsum.photos/id/133/367/267"},
+    {"img":"https://picsum.photos/id/164/367/267"},
+    {"img":"https://picsum.photos/id/180/367/267"},
+    {"img":"https://picsum.photos/id/191/367/267"},
+    {"img":"https://picsum.photos/id/203/367/267"},
+    {"img":"https://picsum.photos/id/257/367/267"},
+    {"img": "https://picsum.photos/id/110/367/267"},
   ];
+
 
   @override
   void dispose() {
