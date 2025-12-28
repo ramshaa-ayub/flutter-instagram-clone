@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_insta_clone/Screens/Chats/chatscreen.dart';
+import 'package:flutter_insta_clone/Screens/Login/loginscreen.dart';
 import 'package:flutter_insta_clone/Widgets/uihelper.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -13,26 +15,11 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   final arrContent = [
     {"img": "https://picsum.photos/id/65/600/800.jpg", "name": "Your Story"},
     {"img": "https://picsum.photos/id/1005/800/800.jpg", "name": "ronin"},
-    {
-      "img":
-          "https://www.vie-aesthetics.com/wp-content/uploads/2021/09/shutterstock_1121116859-1024x732.jpg",
-      "name": "Johny",
-    },
-    {
-      "img": "https://i.ytimg.com/vi/ILJkRQwhDec/maxresdefault.jpg",
-      "name": "John doe",
-    },
+    {"img": "https://picsum.photos/id/85/600/800.jpg", "name": "Johny"},
+    {"img": "https://i.ytimg.com/vi/ILJkRQwhDec/maxresdefault.jpg", "name": "John doe"},
     {"img": "https://picsum.photos/id/1011/600/800.jpg", "name": "Ralph"},
-    {
-      "img":
-          "https://st5.depositphotos.com/2760050/74592/i/450/depositphotos_745925384-stock-photo-businessman-portrait-outdoor-smiling-mature.jpg",
-      "name": "Bobby",
-    },
-    {
-      "img":
-          "https://st.depositphotos.com/1075946/1394/i/450/depositphotos_13940920-stock-photo-portrait-of-handsome-man-with.jpg",
-      "name": "charmi",
-    },
+    {"img": "https://st5.depositphotos.com/2760050/74592/i/450/depositphotos_745925384-stock-photo-businessman-portrait-outdoor-smiling-mature.jpg", "name": "Bobby"},
+    {"img": "https://st.depositphotos.com/1075946/1394/i/450/depositphotos_13940920-stock-photo-portrait-of-handsome-man-with.jpg", "name": "charmi"},
     {"img": "https://picsum.photos/id/1027/800/800.jpg", "name": "Ameli"},
     {"img": "https://picsum.photos/id/91/600/800.jpg", "name": "Henry"},
     {"img": "https://picsum.photos/id/823/600/800.jpg", "name": "Alexa"},
@@ -43,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     {
       "user": "Johny",
       "city": "Tokyo, Japan",
-      "image": "https://picsum.photos/id/1015/600/375", // network images
+      "image": "https://picsum.photos/id/1015/600/375",
       "caption": "The game in Japan was amazing.",
     },
     {
@@ -95,21 +82,18 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       "caption": "History everywhere.",
     },
     {
-  "user": "Emma",
-  "city": "London, UK",
-  "image": "https://picsum.photos/id/1011/367/267.jpg",
-  "caption": "Dream big."
-},
+      "user": "Emma",
+      "city": "London, UK",
+      "image": "https://picsum.photos/id/1011/367/267.jpg",
+      "caption": "Dream big.",
+    },
   ];
 
   // ---------------- STATES
   List<bool> isLiked = List.generate(10, (_) => false);
   List<bool> isSaved = List.generate(10, (_) => false);
   List<List<String>> comments = List.generate(10, (_) => []);
-  List<TextEditingController> commentControllers = List.generate(
-    6,
-    (_) => TextEditingController(),
-  );
+  List<TextEditingController> commentControllers = List.generate(10, (_) => TextEditingController());
 
   // ---------------- HEART ANIMATION
   late AnimationController heartController;
@@ -123,10 +107,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       vsync: this,
       duration: const Duration(milliseconds: 400),
     );
-    heartScale = Tween(
-      begin: 0.5,
-      end: 1.2,
-    ).animate(CurvedAnimation(parent: heartController, curve: Curves.easeOut));
+    heartScale = Tween(begin: 0.5, end: 1.2)
+        .animate(CurvedAnimation(parent: heartController, curve: Curves.easeOut));
   }
 
   void _onDoubleTap(int index) {
@@ -155,7 +137,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       appBar: AppBar(
         toolbarHeight: 88,
         backgroundColor: const Color(0XFF121212),
-        leading: Uihelper.CustomImage(imgurl: "Camera.png"),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => LoginScreen()),
+            );
+          },
+        ),
         title: Uihelper.CustomImage(imgurl: "Instagram Logo.png"),
         centerTitle: true,
         actions: [
@@ -164,7 +154,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             icon: Uihelper.CustomImage(imgurl: "IGTV.png"),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ChatScreen()),
+              );
+            },
             icon: Uihelper.CustomImage(imgurl: "Messenger.png"),
           ),
         ],
@@ -199,18 +194,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         child: CircleAvatar(
                           radius: 32,
-                          backgroundImage: NetworkImage(
-                            arrContent[index]["img"]!,
-                          ),
+                          backgroundImage: NetworkImage(arrContent[index]["img"]!),
                         ),
                       ),
                       const SizedBox(height: 4),
                       Text(
                         arrContent[index]["name"]!,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Colors.white,
-                        ),
+                        style: const TextStyle(fontSize: 12, color: Colors.white),
                       ),
                     ],
                   ),
@@ -227,21 +217,13 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   ListTile(
                     leading: CircleAvatar(
                       radius: 20,
-                      backgroundImage: NetworkImage(
-                        "https://picsum.photos/50/50?random=$i",
-                      ),
+                      backgroundImage: NetworkImage("https://picsum.photos/50/50?random=$i"),
                     ),
                     title: Text(
                       posts[i]["user"]!,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
+                      style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                     ),
-                    subtitle: Text(
-                      posts[i]["city"]!,
-                      style: const TextStyle(color: Colors.white70),
-                    ),
+                    subtitle: Text(posts[i]["city"]!, style: const TextStyle(color: Colors.white70)),
                     trailing: Uihelper.CustomImage(imgurl: "more.png"),
                   ),
 
@@ -260,11 +242,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         if (activeHeart == i)
                           ScaleTransition(
                             scale: heartScale,
-                            child: const Icon(
-                              Icons.favorite,
-                              color: Colors.red,
-                              size: 100,
-                            ),
+                            child: const Icon(Icons.favorite, color: Colors.red, size: 100),
                           ),
                       ],
                     ),
@@ -272,17 +250,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                   /// ACTIONS
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 6,
-                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     child: Row(
                       children: [
                         IconButton(
-                          icon: Icon(
-                            isLiked[i] ? Icons.favorite : Icons.favorite_border,
-                            color: isLiked[i] ? Colors.red : Colors.white,
-                          ),
+                          icon: Icon(isLiked[i] ? Icons.favorite : Icons.favorite_border,
+                              color: isLiked[i] ? Colors.red : Colors.white),
                           onPressed: () {
                             setState(() => isLiked[i] = !isLiked[i]);
                           },
@@ -304,12 +277,8 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         ),
                         const Spacer(),
                         IconButton(
-                          icon: Icon(
-                            isSaved[i] ? Icons.bookmark : Icons.bookmark_border,
-                            color: Colors.white,
-                          ),
-                          onPressed: () =>
-                              setState(() => isSaved[i] = !isSaved[i]),
+                          icon: Icon(isSaved[i] ? Icons.bookmark : Icons.bookmark_border, color: Colors.white),
+                          onPressed: () => setState(() => isSaved[i] = !isSaved[i]),
                         ),
                       ],
                     ),
@@ -323,10 +292,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                         children: [
                           TextSpan(
                             text: "${posts[i]["user"]} ",
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white,
-                            ),
+                            style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                           ),
                           TextSpan(
                             text: posts[i]["caption"],
@@ -363,23 +329,15 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         child: Column(
           children: [
             const SizedBox(height: 10),
-            const Text(
-              "Comments",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-            ),
+            const Text("Comments",
+                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
             const Divider(color: Colors.white30),
             Expanded(
               child: ListView.builder(
                 itemCount: comments[index].length,
                 itemBuilder: (_, i) => ListTile(
                   leading: const CircleAvatar(radius: 14),
-                  title: Text(
-                    comments[index][i],
-                    style: const TextStyle(color: Colors.white),
-                  ),
+                  title: Text(comments[index][i], style: const TextStyle(color: Colors.white)),
                 ),
               ),
             ),
