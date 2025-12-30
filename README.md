@@ -1,16 +1,67 @@
-# flutter_insta_clone
+# 📸 Instagram Clone in Flutter
 
-A new Flutter project.
+![App Preview](preview.png)
 
-## Getting Started
+A clean and modern **Instagram Clone UI** built using **Flutter**.  
+This project focuses on recreating the core Instagram interface with a smooth and responsive design.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🔐 Login Screen UI
+- 📝 Sign Up Screen UI
+- 🏠 Home Feed UI
+- 🔍 Search Screen UI
+- ➕ Create Post Screen UI
+- 📷 Stories Section
+- 💬 Chat / Messages UI
+- 🔔 Notifications UI
+- 👤 Profile Screen UI
+- 🌙 Dark Mode Inspired Design
+- 📱 Fully Responsive Layout
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠 Built With
+
+- **Dart**
+- **Flutter**
+
+---
+
+## 🚀 Purpose of this Project
+
+- Practice Flutter UI development
+- Improve layout & design skills
+- Understand social media app structure
+- Build strong projects
+
+---
+
+## 📌 Status
+
+🛠 Currently working on:
+
+- Backend integration (Firebase – upcoming)
+- State management improvements
+
+---
+
+## ▶️ How to Run This Project
+
+```bash
+flutter pub get
+flutter run
+Make sure Flutter SDK is installed and a device/emulator is connected.
+
+🙌 Acknowledgements
+Inspired by Instagram UI
+Built with passion while learning Flutter 💙
+
+👩‍💻 Author
+Ramsha Ayub
+Flutter Developer in progress 🚀
+Learning. Building. Improving.
+
+⭐ If you like this project, don’t forget to give it a star!
