@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="flutter_insta_clone"
+        android:label="ramsha.instaclone"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
